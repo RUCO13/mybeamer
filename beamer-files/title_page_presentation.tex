@@ -1,0 +1,89 @@
+\begin{titlepage}
+\begin{tikzpicture}[remember picture,overlay]
+\coordinate (A) at (0,0);
+
+\node[at=(current page.center),
+      opacity=0.2,
+     ]  {\includegraphics[width=\paperwidth,height=\paperheight]{../beamer-figures/title-page/AlGaAs-back-0-lp}};
+     
+
+\node[anchor=north west,
+scale=0.08,
+inner sep=0pt,
+opacity=1,
+](iicologo) 
+at (current page.north west) {\includegraphics{../beamer-figures/title-page/logo_iico_azul.png}};
+
+\node[anchor=north east,
+scale=0.15,
+inner sep=0pt,
+opacity=1,
+](iicologo) 
+at (current page.north east) {\includegraphics{../beamer-figures/title-page/logo_uaslp_azul.png}};      
+     
+     
+\node[text width=0.65\paperwidth,
+      anchor=north,
+	inner sep=0pt,
+	yshift=-0.5cm,
+      align=center,
+      scale=1.1] (uni) at (current page.north) { 
+   UNIVERSIDAD AUTONOMA DE SAN LUIS POTOSI\\
+   FACULTAD DE CIENCIAS\\
+   POSGRADO EN CIENCIAS APLICADAS        
+       };     
+     
+%\node[font=\fontsize{14}{10}\selectfont, 
+%      text width=17cm,
+%      anchor=center,
+%      inner sep=0pt,
+%      yshift=1.8cm,
+%      color=blue!20!black!80,
+%      align=center] (title) at (current page.center) { 
+%      
+%           };
+%       
+\node[%
+%font=\bfseries\fontsize{20}{10}\selectfont, 
+text width=0.9\paperwidth,
+anchor=center,
+inner sep=0pt,
+yshift=1cm,
+color=blue,
+align=center,
+scale=2] (title) at (current page.center)  { 
+	Pozos Cuánticos Acoplados como una nueva\\
+fuente de Anisotropías \'Opticas\\
+en Sistemas Nanoestructurados
+};
+       
+\node[below = of title,
+text width=0.5\paperwidth,
+inner sep=0pt,
+yshift=0cm,
+align=center,
+scale=1.2] (author) {
+                        OSCAR RUIZ CIGARRILLO\\
+                         };       
+       
+\node[below = of author,
+text width=30cm,
+inner sep=0pt,
+yshift=0.5,
+align=center,
+scale=1.1] (profesor) { 
+		                {\color{blue}Asesores de tesis} \\
+                        Dr. Luis Felipe Lastras Martinez\\
+                        Dr. Raul Eduardo Balderas Navarro\\
+                        Dr. Edgar Armando Cerda Mendez
+                     };   
+\node[below = of profesor,
+text width=\textwidth,
+inner sep=0pt,
+yshift=0.5cm,
+align=center,
+scale=0.7] (date) {SAN LUIS POTOSÍ, MÉXICO, \today};                     
+                             
+\end{tikzpicture}
+
+\end{titlepage}

@@ -1,0 +1,50 @@
+\subsection{Estructura de Bandas}
+\begin{frame}[t]
+\frametitle{Introducci\'on}
+\framesubtitle{Estructura de Bandas}
+\vspace{-0.5cm}
+\begin{tikzpicture}[remember picture, overlay]
+\node<1->[anchor = north west, text width =0.7\textwidth, yshift = -0.75cm](txt) at (current page.north west) {
+	\begin{tcolorbox}[enhanced,title =Estructura de Bandas,
+	left=1mm,
+	top=1mm,
+	bottom=1mm,
+	right=1mm,
+	width =\textwidth,
+	height=0.45\textheight,
+	boxsep = 0cm,
+	coltitle=blue,
+	attach boxed title to top center={yshift=-2mm,yshifttext=-1mm},
+	boxed title style={colframe=blue,
+		colback=gc!90}]
+	\begin{itemize}
+	\item<1-> Dicta el comportamiento de los electrones dentro de un solido
+	\item<2-> En un solido $\approx 10^{23}$ atomos\\$\rightarrow$\text{\color{red}problema complejo de muchos cuerpos}
+	\item<3-> Hamiltoniano de un solido
+	\item<4-> Gracias al Teorema de Bloch\\ $\rightarrow$ potencial periodico
+	\item<5-> Ecuacion de Schr\"odinger en terminos de un el\'ectron. 
+	\end{itemize}
+	\end{tcolorbox}	
+};
+
+% \node<1->[anchor=north east,xshift=-2cm,yshift=-1cm] at (current page.north east){\includegraphics[width=0.35\textwidth]{../../../scripts/structures/GaAs-2}};
+
+\node<3>[anchor=center,text width=\textwidth,font=\sffamily,xshift=-1cm,yshift=-2cm] at (current page.center){
+\begin{equation*}
+	\begin{split}
+	H  =  &\dfrac{1}{2M}\sum\limits_{i=1}^{N_{n}} \bff{P}_{j}^{2} + \dfrac{1}{2m_{0}} \sum\limits_{j=1}^{N_{e}} \bff{p}_{j}^{2} + \dfrac{Z^{2}}{2} \sum\limits_{i,j=1,i\neq j}^{N_{n}} V_{c}\left(\bff{R}_{i}-\bff{R}_{j}\right)-Z\sum\limits_{i=1}^{N_{n}}\sum\limits_{j=1}^{N_{e}}V_{c}\left(\bff{r}_{j}-\bff{R}_{i}\right) \\
+	& + \dfrac{1}{2} \sum\limits_{i,j=1,i\neq j}^{N_{e}} V_{c} \left(\bff{r}_{i}-\bff{r}_{j}\right)
+	\end{split}
+\end{equation*}
+};
+
+% \node<4->[anchor=south west,opacity=0.5](i1) at (current page.south west){\includegraphics[width=\textwidth,trim = {0cm 0cm 0cm 2cm},clip]{beamer-figures/introduction/atom-line.png}};
+% \node<4->[anchor=center,yshift=0cm,inner sep=0mm,yshift=-0.5cm](bloch) at (i1.center){\animategraphics[autoplay,loop,width=\textwidth]{8}{beamer-figures/introduction/b1}{}{}};
+
+% \node<4->[anchor=south west,text width=\textwidth,scale=0.7] at (current page.south west) {Image credit: from \href{https://commons.wikimedia.org/wiki/File:Standing_wave.gif}{Wikimedia Commons}, public domain};
+% \node<5->[anchor=south west,yshift=-0.5cm,inner sep=0mm](schrodinger)at(bloch.north){$\left[-\dfrac{\hbar^2}{2m_{0}}\nabla^2 + U(\rv)\right]\psi (r)=\senergy\psi(\rv)$}; 
+
+
+\end{tikzpicture}
+\end{frame}
+
